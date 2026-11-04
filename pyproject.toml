@@ -1,0 +1,24 @@
+[project]
+name = "vortex-tracking-stem-dpc-nanotools"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lars", email = "larsivans@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "nbstripout>=0.9.1",
+]
+
+[project.scripts]
+vortex-tracking-stem-dpc-nanotools = "vortex_tracking_stem_dpc_nanotools:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "mordi",
+]
