@@ -9,8 +9,8 @@ env/
 ENV/
 
 # Keep data directory, but ignore its contents
-data/*
-!data/.gitkeep
+jupyter/data/*
+!jupyter/data/.gitkeep
 
 # Python-generated files
 __pycache__/
