@@ -83,4 +83,6 @@ def main(original_images, registered_images):
     
     print(f"Created {len(disk_masks)} disk masks")
 
-    return disk_masks
+    center = np.stack((cy, cx), axis=-1)
+
+    return disk_masks, center, radii
